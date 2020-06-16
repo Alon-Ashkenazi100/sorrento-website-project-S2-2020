@@ -1,32 +1,96 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Booking</title>
+      <title>Booking for Sorrento By The Sea</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
       <link rel="stylesheet" href="styles/styles.css">
       <meta name="viewport" content="width=device, initial-scale=1">
       <meta name="keywords" content="sorrento,holiday,apartment,victoria, melbourne, australia">
-      <meta name="description" content="a holiday apartment for rent in, Sorrrento,
-       VIC, Australia">
+      <meta name="description" content="A holiday apartment for rent in, Sorrrento, VIC, Australia">
       <meta name="author" content="Alon">
     </head>
     <body>
-      <header class="header"></header>
+      <header class="header">
         <a href="index.html" aria-label="back to home page">
           <img class="logo" src="assets/logo_clean.png">
         </a>
         <nav class="main-navigation">
           <a href="index.html">Home</a>
-          <a href="booking.html">Booking</a>
-          <a href="contact.html" class="active">Contact</a>
+          <a href="booking.html" class="active">Booking</a>
+          <a href="contact.html">Contact</a>
           <a href="about.html">About</a>
-          <a href="surrounds.html">surrounds</a>
+          <a href="surrounds.html">Surrounds</a>
         </nav>
       </header>
-      <main class="content"></main>
+      <main class="content">
+        <form id="booking-form" method="post">
+          <div class="booking-grid">
+            <div class="form-group">
+              <label for="checkin">Check in date</label>
+              <input class="full" tabindex="1" type="date" id="checkin" placeholder="check in date" name="checkin">
+            </div>
+            <div class="form-group">
+              <label for="checkout">Check out date</label>
+              <input class="full" tabindex="2" type="date" id="checkout" placeholder="check out date" name="checkout">
+            </div>
+            <div class="form-group">
+              <label for="adults">Number of adults</label>
+              <input type="number" tabindex="3" id="adults" value="1" min="1" max="6" name="adults">
+            </div>
+            <div class="form-group">
+              <label for="children">Number of adults</label>
+              <input type="number" tabindex="4" id="children" value="0" min="0" max="6" name="children">
+            </div>
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input class="full" tabindex="5" type="text" id="name" placeholder="your name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Your email</label>
+              <input class="full" tabindex="6" type="email" id="email" placeholder="your email address" name="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Your phone</label>
+              <input class="full" tabindex="7" type="number" id="phone" placeholder="your contact number" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="notes">Notes</label>
+              <input class="full" tabindex="8" type="notes" id="notes" placeholder="notes for the host" rows="3" cols=12>
+            </div>
+            <div class="payment">
+
+              <label class="full" for="card-type">Card Type</label><br>
+              <input type="radio" name="type" id="mc" checked value="mc">
+              <label for="mc">Mastercard</label>
+              <input type="radio" name="type" id="visa" value="visa">
+              <label for="visa">Visa</label>
+              <input type="radio" name="type" id="amex" value="amex">
+              <label for="amex">American Express</label><br>
+
+              <label class="full" for="card-number">Card Number</label><br>
+              <input type="text" name="card=number" placeholder="0000-0000-0000-0000">
+              <label class="full" for="cvv">CVV</label><br>
+              <input type="text" name="cvv" id="cvv" placeholder="123"><br>
+              <label class="full" for="card-name">Name on the card</label><br>
+              <input type="text" name="card-name" id="card-name" placeholder="Jane Smith">
+            </div>
+            <div class="buttons">
+              <button type="reset">Clear Form</button>
+              <button type="submit">Submit booking requests</button>
+          </div>
+        </form>
         <!-- page content -->
+        <!-- booking form -->
+          <!-- check in date -->
+          <!-- check out date -->
+          <!-- guests -->
+            <!-- adults -->
+            <!-- children -->
+          <!--payment-->
+            <!-- credit card -->
+            <!-- paypal -->
       </main>
-      <footer class="footer"></footer>>
+      <footer class="footer">
         <a href="contact.html" class=footer-contact>
           Get in touch
         </a>
@@ -47,8 +111,8 @@
         </nav>
       <nav class="footer-navigation">
         <a href="index.html">Home</a>
-        <a href="booking.html">Booking</a>
-        <a href="contact.html" class="active"></a>Contact</a>
+        <a href="booking.html" class="active">Booking</a>
+        <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
         <a href="surrounds.html">Surrounds</a>
       </nav>
