@@ -2,9 +2,11 @@
 <html lang="en">
     <head>
       <title>Booking for Sorrento By The Sea</title>
-      <link href="user-solid.png" rel="icon">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+      <link href="assets/user-solid.png" rel="icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
       <link rel="stylesheet" href="styles/styles.css">
+      <link rel="stylesheet" href="responsive.css">
+      <link rel="stylesheet" href="script.js">
       <meta name="viewport" content="width=device, initial-scale=1">
       <meta name="keywords" content="sorrento,holiday,apartment,victoria, melbourne, australia">
       <meta name="author" content="Alon">
@@ -14,13 +16,13 @@
     <body>
       <header class="header">
         <a href="index.html" aria-label="back to home page">
-          <img class="logo" src="assets/logo_clean.png">
+          <img src="assets/logo_clean.png" alt="Created by TAFE IT Ultimo. Copyright free." class="logo">
         </a>
         <nav class="main-navigation">
           <a href="index.html">Home</a>
+          <a href="about.html">About</a>
           <a href="booking.html" class="active">Booking</a>
           <a href="contact.html">Contact</a>
-          <a href="about.html">About</a>
           <a href="surrounds.html">Surrounds</a>
         </nav>
       </header>
@@ -40,7 +42,7 @@
               <input type="number" tabindex="3" id="adults" value="1" min="1" max="6" name="adults">
             </div>
             <div class="form-group">
-              <label for="children">Number of adults</label>
+              <label for="children">Number of children</label>
               <input type="number" tabindex="4" id="children" value="0" min="0" max="6" name="children">
             </div>
             <div class="form-group">
@@ -81,6 +83,7 @@
               <button type="submit">Submit booking requests</button>
             </div>
           </div>
+          <img class="logo" src="assets/paypal_small.PNG">
         </form>
         <!-- page content -->
         <!-- booking form -->
@@ -96,7 +99,12 @@
       <footer class="footer">
         <a href="contact.html" class=footer-contact>
           Get in touch
+          <!-- <img class="logo" src="assets/facebook_small.PNG"> -->
+          <!-- <img class="logo" src="assets/instagram_small.PNG"> -->
+          <!-- <img class="logo" src="assets/twitter_small.PNG"> -->
+          <!-- <img class="logo" src="assets/youtube-variation_small.PNG"> -->
         </a>
+        <p class="copyright">&copy; Sorrento By The Sea 2020</p>
         <nav class="social-navigation">
         <h3>Follow Us</h3>
           <a href="https://facebook.com/sorrentobythesea">
@@ -114,15 +122,16 @@
         </nav>
       <nav class="footer-navigation">
         <a href="index.html">Home</a>
-        <a href="booking.html" class="active">Booking</a>
-        <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
+        <a href="booking.html" class="active">Booking</a>
         <a href="surrounds.html">Surrounds</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <nav class="meta-nav">
         <a href="privacy.html">Privacy Policy</a>
         <a href="tnc.html">Terms and Conditions</a> 
       </nav>
     </footer>
+    <!-- <img class="logo" src="assets/sorrento_by_the_sea_logo.jpg"> -->
   </body>
 </html>

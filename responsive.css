@@ -1,0 +1,24 @@
+@media screen and ( max-width: 576px ) {
+    #navbutton {
+      display: block;
+      justify-self: end;
+      align-self: center;
+      margin-right: 0.5em;
+    }
+    .header {
+      grid-template-columns: 1fr 1fr;
+    }
+    .navigation {
+      flex-direction: column;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      min-width: 100%;
+      max-height: 0;
+      overflow: hidden;
+    }
+  
+    .navigation.open {
+      max-height: 50vh;
+    }
+  
+  }
