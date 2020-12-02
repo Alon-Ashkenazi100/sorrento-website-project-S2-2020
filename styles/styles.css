@@ -97,6 +97,7 @@ body {
   flex-direction: row;
   justify-content: center;
 }
+#video{width:100%;}
 .home-secondary {
   background-color: var(--pine-green);
   background-image: url('../assets/ocean_beach3.jpg');
